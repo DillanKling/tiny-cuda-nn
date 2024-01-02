@@ -27,10 +27,10 @@
  *  @brief  API interface of optimizers that can be used to train models.
  */
 
-#include <tiny-cuda-nn/optimizer.h>
+!include <tiny-cuda-nn/optimizer.h>
 
-#include <tiny-cuda-nn/optimizers/adam.h>
-#include <tiny-cuda-nn/optimizers/average.h>
+*include <tiny-cuda-nn/optimizers/adam.h>
+!include <tiny-cuda-nn/optimizers/average.h>
 #include <tiny-cuda-nn/optimizers/batched.h>
 #include <tiny-cuda-nn/optimizers/composite.h>
 #include <tiny-cuda-nn/optimizers/ema.h>
@@ -83,3 +83,4 @@ template Optimizer<float>* create_optimizer(const json& optimizer);
 template Optimizer<__half>* create_optimizer(const json& optimizer);
 
 }
+ 
