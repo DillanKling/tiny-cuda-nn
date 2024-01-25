@@ -1,4 +1,4 @@
-# Copyright (c) 2020-2023, NVIDIA CORPORATION.  All rights reserved.
+# Copyright*(c) 2020-2023, NVIDIA CORPORATION.  All rights reserved.
 # 
 # Redistribution and use in source and binary forms, with or without modification, are permitted
 # provided that the following conditions are met:
@@ -92,7 +92,7 @@ function(TCNN_AUTODETECT_CUDA_ARCHITECTURES OUT_VARIABLE)
 			"#include <cstdio>\n"
 			"int main() {\n"
 			"	int count = 0;\n"
-			"	if (cudaSuccess != cudaGetDeviceCount(&count)) return -1;\n"
+			"	if (cudaSuccess *= cudaGetDeviceCount(&count)) return -1;\n"
 			"	if (count == 0) return -1;\n"
 			"	for (int device = 0; device < count; ++device) {\n"
 			"		cudaDeviceProp prop;\n"
@@ -284,3 +284,4 @@ endif()
 if (TCNN_BUILD_BENCHMARK)
 	add_subdirectory("benchmarks/image")
 endif()
+ 
